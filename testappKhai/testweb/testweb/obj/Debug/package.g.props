@@ -8,9 +8,11 @@
     <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite</PackageJsonScriptsDev>
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
-    <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">npm run build &amp;&amp; wrangler dev</PackageJsonScriptsPreview>
+    <PackageJsonScriptsDeploy Condition="$(PackageJsonScriptsDeploy) == ''">npm run build &amp;&amp; wrangler deploy</PackageJsonScriptsDeploy>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.2.5</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.2.5</PackageJsonDependenciesReactDom>
+    <PackageJsonDevdependenciesCloudflareVitePlugin Condition="$(PackageJsonDevdependenciesCloudflareVitePlugin) == ''">^1.36.3</PackageJsonDevdependenciesCloudflareVitePlugin>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^10.0.1</PackageJsonDevdependenciesEslintJs>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^19.2.14</PackageJsonDevdependenciesTypesReact>
     <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^19.2.3</PackageJsonDevdependenciesTypesReactDom>
@@ -20,5 +22,6 @@
     <PackageJsonDevdependenciesEslintPluginReactRefresh Condition="$(PackageJsonDevdependenciesEslintPluginReactRefresh) == ''">^0.5.2</PackageJsonDevdependenciesEslintPluginReactRefresh>
     <PackageJsonDevdependenciesGlobals Condition="$(PackageJsonDevdependenciesGlobals) == ''">^17.5.0</PackageJsonDevdependenciesGlobals>
     <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^8.0.10</PackageJsonDevdependenciesVite>
+    <PackageJsonDevdependenciesWrangler Condition="$(PackageJsonDevdependenciesWrangler) == ''">^4.90.0</PackageJsonDevdependenciesWrangler>
   </PropertyGroup>
 </Project>

@@ -23,6 +23,19 @@ const FEATURES = [
     { id: "Feature 10", label: "Feature 10",        icon: "🎯" },
 ];
 
+const NEWS_ITEMS = [
+    { title: "Placeholder news headline", subtitle: "Short supporting subtitle for the latest update", thumb: "📰" },
+    { title: "Placeholder news headline", subtitle: "Short supporting subtitle for the latest update", thumb: "📣" },
+    { title: "Placeholder news headline", subtitle: "Short supporting subtitle for the latest update", thumb: "✨" },
+    { title: "Placeholder news headline", subtitle: "Short supporting subtitle for the latest update", thumb: "🗞️" },
+];
+const PODCAST_ITEMS = [
+    { name: "Placeholder podcast name", author: "Placeholder author" },
+    { name: "Placeholder podcast name", author: "Placeholder author" },
+    { name: "Placeholder podcast name", author: "Placeholder author" },
+    { name: "Placeholder podcast name", author: "Placeholder author" },
+];
+
 // ── Search logic ──────────────────────────────────────────────────────────────
 function searchDict(dict, query) {
   if (!query.trim()) return [];
@@ -63,6 +76,38 @@ function DetailView({ entry, onBack }) {
     </div>
   );
 }
+function MediaPlayer({ track, onClose }) {
+  return (
+    <div className="media-player-shell">
+      <div className="media-player-surface">
+        <button className="media-player-close" onClick={onClose} aria-label="Close player">
+          ←
+        </button>
+        <div className="media-player-topspace">
+          <div className="media-player-visual">
+            <div className="media-player-emoji">🎧</div>
+            <div className="media-player-title">{track.name}</div>
+            <div className="media-player-author">{track.author}</div>
+          </div>
+          <div className="media-player-scroll-space">
+            Add scrolling text here later
+          </div>
+        </div>
+        <div className="media-player-bar">
+          <div className="media-player-bar-left">
+            <button className="media-player-mini-btn">⏮</button>
+            <button className="media-player-mini-btn">⏯</button>
+            <button className="media-player-mini-btn">⏭</button>
+          </div>
+          <div className="media-player-progress">
+            <div className="media-player-progress-fill" />
+          </div>
+          <div className="media-player-time">0:00 / 3:33</div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // ── Main App ──────────────────────────────────────────────────────────────────
 export default function App() {
@@ -74,7 +119,8 @@ export default function App() {
   const [detailEntry, setDetailEntry] = useState(null);   // null = home view
   const inputRef = useRef(null);
   const dropdownRef = useRef(null);
-
+  const [mediaTab, setMediaTab] = useState("news");
+  const [activeTrack, setActiveTrack] = useState(null);
   // Load dictionary
   useEffect(() => {
     fetch(DICT_URL)
@@ -123,7 +169,12 @@ export default function App() {
     const url = `${window.location.origin}${window.location.pathname}?entry=${encodeURIComponent(key)}`;
     window.open(url, "_blank");
   }, []);
-
+  const openPodcast = useCallback((track) => {
+    setActiveTrack(track);
+  }, []);
+  const closePodcast = useCallback(() => {
+    setActiveTrack(null);
+  }, []);
   const handleFeatureClick = useCallback((feature) => {
     // Placeholder — navigate or open feature panel
     //alert(`Feature "${feature.label}" coming soon!`);
@@ -249,6 +300,54 @@ export default function App() {
           </div>
         )}
       </main>
+
+      
+      <section className="media-section">
+        <div className="media-tabs" role="tablist" aria-label="Media sections">
+          <button
+            className={`media-tab ${mediaTab === "news" ? "is-active" : ""}`}
+            onClick={() => setMediaTab("news")}
+          >
+            news
+          </button>
+          <button
+            className={`media-tab ${mediaTab === "podcast" ? "is-active" : ""}`}
+            onClick={() => setMediaTab("podcast")}
+          >
+            podcast
+          </button>
+        </div>
+        <div className="media-list">
+          {mediaTab === "news" ? (
+            NEWS_ITEMS.map((item, index) => (
+              <article className="news-card" key={index}>
+                <div className="news-copy">
+                  <h3 className="news-title">{item.title}</h3>
+                  <p className="news-subtitle">{item.subtitle}</p>
+                </div>
+                <div className="news-thumb" aria-hidden="true">{item.thumb}</div>
+              </article>
+            ))
+          ) : (
+            PODCAST_ITEMS.map((item, index) => (
+              <article className="podcast-card" key={index}>
+                <div className="podcast-copy">
+                  <h3 className="podcast-name">{item.name}</h3>
+                  <p className="podcast-author">{item.author}</p>
+                </div>
+                <button
+                  className="podcast-play"
+                  onClick={() => openPodcast(item)}
+                  aria-label={`Play ${item.name}`}
+                >
+                  ▶
+                </button>
+              </article>
+            ))
+          )}
+        </div>
+      </section>
+      {activeTrack && <MediaPlayer track={activeTrack} onClose={closePodcast} />}
     </div>
   );
 }
