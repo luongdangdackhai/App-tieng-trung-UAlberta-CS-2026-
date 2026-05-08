@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="App test/App test.csproj" Id="826f0edd-a8f9-4bc2-9c93-cdcc8a29270a" />
-  <Project Path="Test App Installation/Test App Installer/Test App Installer.vdproj" Type="Installer" />
+  <Project Path="Test App Installation/Test App Installer/Test App Installer.vdproj" Type="Installer">
+    <Build />
+  </Project>
 </Solution>
