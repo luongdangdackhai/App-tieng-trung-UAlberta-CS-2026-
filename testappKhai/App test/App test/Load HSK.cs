@@ -37,7 +37,7 @@ namespace App_test
         {
            
             var jsondata = File.ReadAllText(file);
-            Console.Write(GetType(jsondata[0]));
+            Console.Write(jsondata);
             var option = new JsonSerializerOptions
             {
                 AllowTrailingCommas = true,
