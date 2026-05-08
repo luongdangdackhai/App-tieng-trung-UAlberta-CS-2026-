@@ -32,3 +32,11 @@ D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Text.En
 D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Text.Json.xml
 D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.csproj.Up2Date
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App test.csproj.AssemblyReference.cache
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App test.exe.config
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\MainWindow.g.cs
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App.g.cs
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App test_MarkupCompile.cache
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App test_MarkupCompile.lref
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App test.exe
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\App test.pdb

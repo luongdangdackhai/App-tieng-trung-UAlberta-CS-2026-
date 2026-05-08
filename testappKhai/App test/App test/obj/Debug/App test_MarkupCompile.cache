@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Release\
+D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\obj\Debug\
 App_test
 none
 false
-TRACE
+DEBUG;TRACE
 D:\PROJECTS\APP TIENG TRUNG 2026 UofA\testappKhai\App test\App test\App.xaml
 1219584333
 
