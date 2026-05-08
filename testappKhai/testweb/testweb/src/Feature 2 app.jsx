@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import "./index.css";
-import "./app.css";
+import "./App.css";
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 // In production, import the JSON directly:
