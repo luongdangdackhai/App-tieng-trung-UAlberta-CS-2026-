@@ -1,0 +1,34 @@
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\App test.exe.config
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\App test.exe
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\App test.pdb
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.csproj.AssemblyReference.cache
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\MainWindow.g.cs
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App.g.cs
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test_MarkupCompile.cache
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test_MarkupCompile.lref
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\MainWindow.baml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.g.resources
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App_test.Properties.Resources.resources
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.csproj.GenerateResource.cache
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.csproj.CoreCompileInputs.cache
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.exe
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.pdb
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Buffers.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.IO.Pipelines.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Memory.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Numerics.Vectors.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Text.Encodings.Web.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Text.Json.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Buffers.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.IO.Pipelines.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Memory.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Numerics.Vectors.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Text.Encodings.Web.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Text.Json.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\KHẢI\app tieng trung\testappKhai\App test\App test\obj\Debug\App test.csproj.Up2Date
