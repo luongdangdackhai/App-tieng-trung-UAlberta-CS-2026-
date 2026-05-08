@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import "./index.css";
-import "./App.css";
+import "./app.css";
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 // In production, import the JSON directly:
@@ -126,7 +126,7 @@ export default function App() {
 
   const handleFeatureClick = useCallback((feature) => {
     // Placeholder — navigate or open feature panel
-    //alert(`Feature "${feature.label}" coming soon!`);
+ //   alert(`Feature "${feature.label}" coming soon!`);
     const url = `${feature.label}.html`;
     window.open(url, "_blank");
   }, []);
@@ -160,7 +160,7 @@ export default function App() {
     <div className="app">
       {/* Header */}
       <header className="header">
-        <h1 className="header-title">漢語詞典</h1>
+        <h1 className="header-title">Feature 1</h1>
         <p className="header-sub">Chinese Dictionary</p>
       </header>
 
