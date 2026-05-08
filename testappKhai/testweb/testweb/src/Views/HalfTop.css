@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #050510;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.halfTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, #09091d 0%, #050510 100%);
+    color: white;
+}
+
+.backgroundGlow {
+    position: absolute;
+    top: -220px;
+    left: 28%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(78, 94, 255, 0.28) 0%, rgba(78, 94, 255, 0) 70%);
+    pointer-events: none;
+}
+
+.topBar {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    background: rgba(13, 14, 43, 0.95);
+}
+
+.profile {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    flex-shrink: 0;
+}
+
+.language {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+    .language span {
+        font-size: 0.7rem;
+    }
+
+.generalBtn {
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.searchBar {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-radius: 0;
+    background: #2a2b58;
+    margin: 0 0 16px 0;
+}
+
+    .searchBar input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+        .searchBar input::placeholder {
+            color: #d8d8eb;
+        }
+
+.searchIcons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.topCards {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    padding: 0 8px;
+    margin-bottom: 14px;
+}
+
+.topCard {
+    position: relative;
+    height: 190px;
+    border-radius: 26px;
+    padding: 22px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+    .topCard h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+.orangeCard {
+    background: linear-gradient(135deg, #ff4fd8 0%, #ff9447 100%);
+}
+
+.blueCard {
+    background: linear-gradient(135deg, #3b69ff 0%, #5e7eff 100%);
+}
+
+.purpleCard {
+    background: linear-gradient(135deg, #6148ff 0%, #9560ff 100%);
+}
+
+.featureGrid {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0 8px;
+}
+
+.featureCard {
+    border: none;
+    outline: none;
+    height: 128px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.2s;
+}
+
+    .featureCard:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+.featureIcon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: white;
+}
+
+.featureCard p {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .topBar {
+        height: 70px;
+    }
+
+    .language {
+        font-size: 1.8rem;
+    }
+
+    .searchBar {
+        height: 78px;
+    }
+
+        .searchBar input {
+            font-size: 1.4rem;
+        }
+
+    .topCard {
+        height: 165px;
+    }
+
+    .featureCard {
+        height: 115px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topBar {
+        height: 64px;
+    }
+
+    .profile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .language {
+        font-size: 1.3rem;
+    }
+
+    .generalBtn {
+        padding: 11px 15px;
+        font-size: 0.9rem;
+    }
+
+    .searchBar {
+        height: 64px;
+        padding: 0 18px;
+    }
+
+        .searchBar input {
+            font-size: 1.1rem;
+        }
+
+    .topCards {
+        gap: 10px;
+        padding: 0 6px;
+    }
+
+    .topCard {
+        height: 135px;
+        border-radius: 22px;
+    }
+
+        .topCard h2 {
+            font-size: 1.5rem;
+        }
+
+    .featureGrid {
+        gap: 10px;
+        padding: 0 6px;
+    }
+
+    .featureCard {
+        height: 95px;
+        border-radius: 18px;
+    }
+
+        .featureCard p {
+            font-size: 0.9rem;
+        }
+}
