@@ -33,52 +33,54 @@ const HalfTop = () => {
         <div className="halfTop">
             <div className="backgroundGlow"></div>
 
-            <div className="topBar">
-                <div className="profile"></div>
+            <div className="contentWrap">
+                <div className="topBar">
+                    <div className="profile"></div>
 
-                <div className="language">
-                    English/ Chinese
-                    <span>▼</span>
-                </div>
-
-                <button className="generalBtn">
-                    General
-                </button>
-            </div>
-
-            <div className="searchBar">
-                <input
-                    type="text"
-                    placeholder="Enter your words or sentences..."
-                />
-
-                <div className="searchIcons">
-                    <span>🎤</span>
-                    <span>⛶</span>
-                </div>
-            </div>
-
-            <div className="topCards">
-                {topCards.map((card, index) => (
-                    <div
-                        key={index}
-                        className={`topCard ${card.className}`}
-                    >
-                        <h2>{card.title}</h2>
+                    <div className="language">
+                        English/ Chinese
+                        <span>▼</span>
                     </div>
-                ))}
-            </div>
 
-            <div className="featureGrid">
-                {features.map((feature, index) => (
-                    <button
-                        key={index}
-                        className="featureCard"
-                    >
-                        <div className="featureIcon"></div>
-                        <p>{feature}</p>
+                    <button className="generalBtn">
+                        General
                     </button>
-                ))}
+                </div>
+
+                <div className="searchBar">
+                    <input
+                        type="text"
+                        placeholder="Enter your words or sentences..."
+                    />
+
+                    <div className="searchIcons">
+                        <span>🎤</span>
+                        <span>⛶</span>
+                    </div>
+                </div>
+
+                <div className="topCards">
+                    {topCards.map((card, index) => (
+                        <div
+                            key={index}
+                            className={`topCard ${card.className}`}
+                        >
+                            <h2>{card.title}</h2>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="featureGrid">
+                    {features.map((feature, index) => (
+                        <button
+                            key={index}
+                            className="featureCard"
+                        >
+                            <div className="featureIcon"></div>
+                            <p>{feature}</p>
+                        </button>
+                    ))}
+                </div>
             </div>
         </div>
     );
