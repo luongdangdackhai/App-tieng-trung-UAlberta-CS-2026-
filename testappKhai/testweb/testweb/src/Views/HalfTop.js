@@ -1,4 +1,6 @@
 ﻿import "./HalfTop.css";
+import MenuBar from "../MenuBar/MenuBar";
+
 
 const topCards = [
     {
@@ -77,11 +79,14 @@ const HalfTop = () => {
                             className="featureCard"
                         >
                             <div className="featureIcon"></div>
+
                             <p>{feature}</p>
                         </button>
                     ))}
                 </div>
             </div>
+
+            <MenuBar />
         </div>
     );
 };

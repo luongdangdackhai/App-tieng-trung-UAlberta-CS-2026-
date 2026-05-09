@@ -11,5 +11,6 @@
   <ItemGroup>
     <Folder Include="src\Assets\Images\" />
     <Folder Include="src\Assets\Gifs\" />
+    <Folder Include="src\MenuBar\" />
   </ItemGroup>
 </Project>

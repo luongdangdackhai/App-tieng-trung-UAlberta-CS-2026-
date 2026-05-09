@@ -12,19 +12,18 @@ body,
     margin: 0;
     padding: 0;
     background: #050510;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
 }
 
 .halfTop {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100dvh;
-    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(180deg, #09091d 0%, #050510 100%);
     color: white;
+    padding-bottom: 120px;
 }
 
 .backgroundGlow {
